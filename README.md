@@ -1,3 +1,5 @@
+YYImage不更新了 修改项目中遇到的问题
+==============
 YYImage
 ==============
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/ibireme/YYImage/master/LICENSE)&nbsp;
@@ -138,7 +140,7 @@ Installation
 ### CocoaPods
 
 1. Update cocoapods to the latest version.
-2. Add `pod 'YYImage'` to your Podfile.
+2. Add `pod 'YYImage', :git => 'https://github.com/china-han/YYImage.git'` to your Podfile.
 3. Run `pod install` or `pod update`.
 4. Import \<YYImage/YYImage.h\>.
 5. Notice: it doesn't include WebP subspec by default, if you want to support WebP format, you may add `pod 'YYImage/WebP'` to your Podfile.
@@ -333,7 +335,7 @@ if (type == YYImageTypePNG) ...
 ### CocoaPods
 
 1. 将 cocoapods 更新至最新版本.
-2. 在 Podfile 中添加 `pod 'YYImage'`。
+2. 在 Podfile 中添加 `pod 'YYImage', :git => 'https://github.com/china-han/YYImage.git'`。
 3. 执行 `pod install` 或 `pod update`。
 4. 导入 \<YYImage/YYImage.h\>。
 5. 注意：pod 配置并没有包含 WebP 组件, 如果你需要支持 WebP，可以在 Podfile 中添加 `pod 'YYImage/WebP'`。

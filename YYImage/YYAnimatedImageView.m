@@ -526,14 +526,13 @@ typedef NS_ENUM(NSUInteger, YYAnimatedImageType) {
 }
 
 - (void)displayLayer:(CALayer *)layer {
- 
     if (_curFrame) {
-       layer.contents = (__bridge id)_curFrame.CGImage;
-   } else {
-       if (@available(iOS 14.0, *)) {
-           [super displayLayer:layer];
-       }
-   }
+        layer.contents = (__bridge id)_curFrame.CGImage;
+    } else {
+        if (@available(iOS 14.0, *)) {
+            [super displayLayer:layer];
+        }
+    }
 }
 
 - (void)setContentsRect:(CGRect)rect forImage:(UIImage *)image{
